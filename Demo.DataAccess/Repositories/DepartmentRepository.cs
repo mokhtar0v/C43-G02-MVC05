@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Text;  
 using System.Threading.Tasks;
 
 namespace Demo.DataAccess.Repositories
@@ -22,7 +22,7 @@ namespace Demo.DataAccess.Repositories
             return _dbContext.Departments.AsNoTracking().ToList();
         }
         //getByID
-        public Department? GetByID(int ID, AppDbContext dbContext)
+        public Department? GetByID(int ID)
         {
             var department = dbContext.Departments.Find(ID);
             return department;

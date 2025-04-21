@@ -7,7 +7,7 @@ namespace Demo.DataAccess.Repositories
         int Add(Department dept);
         int Edit(Department dept);
         IEnumerable<Department> getAll(bool withTracking = false);
-        Department? GetByID(int ID, AppDbContext dbContext);
+        Department? GetByID(int ID);
         int Remove(Department dept);
     }
 }
