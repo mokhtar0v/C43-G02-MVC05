@@ -10,7 +10,7 @@ namespace Demo.DataAccess.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<Department> builder)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }

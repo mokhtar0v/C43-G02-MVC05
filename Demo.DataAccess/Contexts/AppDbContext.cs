@@ -9,7 +9,7 @@ namespace Demo.DataAccess.Contexts
 {
     public  class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options):base() { }
+        public AppDbContext(DbContextOptions<AppDbContext> options):base(options) { }
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
         //    //optionsBuilder.UseSqlServer("Connection string");
