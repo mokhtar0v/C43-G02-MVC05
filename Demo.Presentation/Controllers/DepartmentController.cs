@@ -57,5 +57,17 @@ namespace Demo.Presentation.Controllers
             return View(createDepartmentDTO);
         }
         #endregion
+
+        #region Details
+        public IActionResult Details(int? id)
+        {
+            if (!id.HasValue) return BadRequest();
+
+            var department = _departmentService.GetDepartmentByID(id.Value);
+            if(department == null) return NotFound();
+
+            return View(department);
+        } 
+        #endregion
     }
 }
