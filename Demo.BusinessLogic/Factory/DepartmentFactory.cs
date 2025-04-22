@@ -48,6 +48,17 @@ namespace Demo.BusinessLogic.Factory
                 CreatedOn = dto.DateOfCreation
             };
         }
+        public static Department ToEntity(this UpdateDepartmentDTO dto)
+        {
+            return new Department()
+            {
+                ID = dto.ID,
+                Name = dto.Name,
+                Code = dto.Code,
+                description = dto.Description,
+                CreatedOn = dto.DateOfCreation
+            };
+        }
 
     }
 }

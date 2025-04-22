@@ -7,6 +7,6 @@ namespace Demo.BusinessLogic.Services
         int CreateDepartment(CreateDepartmentDTO createDepartmentDTO);
         IEnumerable<DepartmentDTO> GetAllDepartments();
         DepartmentDetailsDTO? GetDepartmentByID(int ID);
-        int? UpdateDepartment(CreateDepartmentDTO createDepartmentDTO);
+        int? UpdateDepartment(UpdateDepartmentDTO createDepartmentDTO);
     }
 }

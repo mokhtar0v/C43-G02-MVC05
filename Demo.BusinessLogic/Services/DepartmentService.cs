@@ -35,11 +35,13 @@ namespace Demo.BusinessLogic.Services
             var res = _departmentRepository.Add(createDepartmentDTO.ToEntity());
             return res;
         }
-        public int? UpdateDepartment(CreateDepartmentDTO createDepartmentDTO)
+        public int? UpdateDepartment(UpdateDepartmentDTO createDepartmentDTO)
         {
             var res = _departmentRepository.Edit(createDepartmentDTO.ToEntity());
             return res;
         }
+
+
 
     }
 }
