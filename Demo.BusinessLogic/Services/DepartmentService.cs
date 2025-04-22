@@ -30,7 +30,7 @@ namespace Demo.BusinessLogic.Services
         //3. constructor mapping
         //4. extention methods
 
-        public int? CreateDepartment(CreateDepartmentDTO createDepartmentDTO)
+        public int CreateDepartment(CreateDepartmentDTO createDepartmentDTO)
         {
             var res = _departmentRepository.Add(createDepartmentDTO.ToEntity());
             return res;
